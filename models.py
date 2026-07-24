@@ -20,6 +20,7 @@ class Sensor(BaseModel):
     max_value: float = 100.0
     warning_threshold: float = 20.0
     is_online: bool = True
+    last_seen: int = 0
 
 class Coop(BaseModel):
     id: str
